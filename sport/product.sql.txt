@@ -1,0 +1,48 @@
+
+
+
+CREATE TABLE `product` (
+  `id` int(8) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `code` varchar(255) NOT NULL,
+  `image` text NOT NULL,
+  `price` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `tblproduct` (`id`, `name`, `code`, `image`, `price`) VALUES
+
+(1,'adidas','dddwx',product-images/amenshoes.jpg', 2000),
+(2, 'jordan', 'kkkws', 'product-images/jordan16.jpg', 3000),
+(3, 'nike', 'dkjdscjk', 'product-images/mnikeshoes5.jpg', 9000),
+(4, 'puma', 'fffffff', 'product-images/mpumashoes.jpg', 7000),
+(5, 'reebok', 'nxcjnxc', 'product-images/mreebokshoes4.jpg', 9999);
+
+
+--
+-- Indexes for table `product`
+--
+ALTER TABLE `tblproduct`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `product_code` (`code`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `product`
+--
+ALTER TABLE `product`
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+COMMIT;
+
+
+
+
+
+
+
